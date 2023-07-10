@@ -14,6 +14,7 @@ public class CollectionsList {
         ArrayList<Usuario> lista = new ArrayList<>();
         Usuario u1 = new Usuario("Ana");
         lista.add(u1);
+
         lista.add(new Usuario("Juliano"));
         lista.add(new Usuario("Carlos"));
         lista.add(new Usuario("Pedro"));
@@ -26,11 +27,17 @@ public class CollectionsList {
         for (Usuario u:lista) {
             System.out.println(u.nome);
         }
-
-
-
-
+        lista.add(2, new Usuario("Misty"));
+        for (Usuario u:lista) {
+            System.out.println(u.nome);
+        }
 
     }
 
+
+
+
+
 }
+
+
