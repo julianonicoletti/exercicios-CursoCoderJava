@@ -12,6 +12,10 @@ public class Hash {
         boolean resultado = usuarios.contains(new Usuario("Guilherme"));
         System.out.println(resultado);
 
+        for (Usuario x : usuarios) {
+            System.out.println(x.nome);
+
+        }
 
     }
 }
