@@ -3,7 +3,12 @@ package oo.composicao.desafio;
 import java.util.ArrayList;
 
 public class Compra {
-    ArrayList<Item> itens = new ArrayList<>();
+
+    static ArrayList<Item> itens = new ArrayList<>();
+
+    public static ArrayList<Item> getItens() {
+        return itens;
+    }
 
     void adicionarItem(Produto p, int qtde) {
         this.itens.add(new Item(p, qtde));
@@ -12,6 +17,7 @@ public class Compra {
     void adicionarItem(String nome, double preco, int qtde) {
         this.itens.add(new Item(new Produto(nome, preco), qtde));
     }
+
     double obterValorCompra() {
         double total = 0;
         for(Item item: itens) {

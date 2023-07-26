@@ -30,14 +30,16 @@ public class Sistema {
         Compra compra3 = new Compra();
         compra3.adicionarItem(new Produto("Impressora", 1890.80), 2);
 
-        cliente.compras.add(compra1);
-        cliente.compras.add(compra2);
+        //cliente.compras.add(compra1);
+        //cliente.compras.add(compra2);
         cliente.compras.add(compra3);
-        cliente.compras.add(compra5);
-
-
-
+        cliente2.compras.add(compra5);
         System.out.println(cliente.obterValorTotal());
+        System.out.println(cliente2.obterValorTotal());
+
+                System.out.println(cliente.toString());
+                System.out.println(cliente2.toString());
+
 
 
 

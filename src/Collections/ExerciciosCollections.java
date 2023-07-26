@@ -2,25 +2,6 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
-/**
- * Crie um programa Java que armazene uma lista de números inteiros. O
- * programa deve realizar as seguintes tarefas:
- *
- * Crie uma lista vazia chamada "numeros" que irá armazenar os números inteiros.
- * Peça ao usuário para digitar 5 números inteiros e adicione-os à lista.
- * Imprima a lista de números na ordem em que foram inseridos.
- * Ordene a lista em ordem crescente.
- * Imprima a lista ordenada.
- * Verifique se um determinado número fornecido pelo usuário está presente
- * na lista. Se estiver, imprima "O número está presente na lista";
- * caso contrário, imprima "O número não está presente na lista".
- * Calcule e imprima a soma de todos os números na lista.
- * Remova os números pares da lista.
- * Imprima a lista final resultante.
- */
-
 public class ExerciciosCollections {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
