@@ -3,7 +3,7 @@ package oo.composicao.desafio;
 public class Produto {
 
 
-    private double preco;
+    double preco;
     String nome;
 
     Produto (String nome, double preco) {

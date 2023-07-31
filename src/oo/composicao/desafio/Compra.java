@@ -21,7 +21,7 @@ public class Compra {
     double obterValorCompra() {
         double total = 0;
         for(Item item: itens) {
-            total += item.quantidade * item.produto.getPreco();
+            total += item.quantidade * item.produto.preco;
         }
         return total;
     }
