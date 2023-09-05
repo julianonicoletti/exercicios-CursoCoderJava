@@ -12,7 +12,7 @@ public class Jantar {
 
         convidado.comer(ingrediente1);
         convidado.comer(ingrediente2);
-        convidado.comer(new Comida(0.500));
+        convidado.comer(new Sorvete(0.500));
         System.out.println(convidado.getPeso());
 
 

@@ -1,4 +1,4 @@
-package ExerciciosClasseMetodos;
+package ExerciciosClasseMetodos2;
 
 public class ModeloComputadorTeste {
     public static void main(String[] args) {

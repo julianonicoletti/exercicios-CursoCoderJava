@@ -1,4 +1,4 @@
-package ExerciciosClasseMetodos;
+package ExerciciosClasseMetodos2;
 
 public class ModeloComputador {
     double placaMae = 800.00;

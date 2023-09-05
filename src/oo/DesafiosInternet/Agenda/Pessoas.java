@@ -46,10 +46,6 @@ public class Pessoas {
         return pessoa;
     }
 
-    public void setPessoas(ArrayList<Pessoas> pessoas) {
-        this.pessoa = pessoas;
-    }
-
     public void armazenarPessoa(String nome, int idade, float altura) {
         pessoa.add(new Pessoas(nome, idade, altura));
 
@@ -90,16 +86,7 @@ public class Pessoas {
             }
     }
 
-
-
-    public static void imprimirAgenda() {
-
-        for (Pessoas pessoas: pessoa) {
-            pessoas.imprimirPessoa();
-        }
-
-    }
-    public void imprimirPessoa() {
+    /*public void imprimirPessoa() {
         for (int i = 0; i < pessoa.size(); i++) {
             Pessoas pessoaAtual = pessoa.get(i);
             System.out.println("---------------------------------------------");
@@ -109,6 +96,12 @@ public class Pessoas {
             System.out.println("Altura: " + pessoaAtual.getAltura());
             System.out.println("---------------------------------------------");
         }
+    }*/
+
+    public void imprimirPessoa() {
+        pessoa.forEach(pessoas -> System.out.println("Nome: " + pessoas.getNome() +
+        "\nIdade: " + pessoas.getIdade() + "\nAltura: " + pessoas.getAltura()));
+
 
     }
 
@@ -125,7 +118,5 @@ public class Pessoas {
             System.out.println("Valor digitado está fora do alcande da lista");
             System.out.println("Digite um valor entre 0 e " + indiceMax);
         }
-
     }
-
 }
